@@ -1,0 +1,13 @@
+
+# Any log files
+
+# STM32CubeIDE file except .ioc
+.idea
+.cproject
+.project
+
+#not sure if this is needed; kept it just in case
+#.mxproject
+
+#CMake out/build folder ; check if this is need
+cmake-build-debug
