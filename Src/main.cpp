@@ -2,8 +2,9 @@
 // Created by salim on 29/12/2021.
 //
 
-#include "mainLoop.h"
 #include <cstdio>
+#include "mttest.hpp"
+
 
 // this is a function declared in C file and used in C++ main
 extern "C" int UserLoop(void);
@@ -11,14 +12,10 @@ extern "C" int UserLoop(void);
 // this is a function defined in C++ main and used in C file
 extern "C" void printTest(int var)
 {
-    printf("test print val: %i", var);
+    //printf("test print val: %i", var);
+    print(var);
 }
 
-template<typename T>
-inline constexpr void print(T a)
-{
-    std::printf("%i \n", a);
-}
 
 int main()
 {
@@ -26,7 +23,7 @@ int main()
     std::printf("hello ");
     constexpr auto var=20;
     print(var);
-
+    printValue(20);
 
     return 0;
 }
