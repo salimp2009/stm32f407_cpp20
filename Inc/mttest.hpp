@@ -17,6 +17,6 @@ inline constexpr void print(T a)
 {
     std::printf("%i \n", a);
 }
-
+//
 
 #endif //STM32_TEST2_MTTEST_HPP
